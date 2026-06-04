@@ -156,7 +156,15 @@
 <footer>
   <div class="footer-inner">
     <span class="sig">Antoine Sifoni<span style="color:var(--accent)">.</span></span>
-    <span class="meta">MONTRÉAL, QC · ANTOINE.SIFONI@GMAIL.COM</span>
+    <span class="email-wrap">
+      <span class="meta">ANTOINE.SIFONI@GMAIL.COM</span>
+      <button type="button" class="copy-email" aria-label="Copy email address" title="Copy email"
+        onclick="navigator.clipboard.writeText('antoine.sifoni@gmail.com');var b=this;b.classList.add('copied');b.title='Copied!';setTimeout(function(){b.classList.remove('copied');b.title='Copy email';},1500);">
+        <svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+        <svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      </button>
+    </span>
+    <button type="button" class="btn footer-dl">Download CV (PDF)</button>
   </div>
 </footer>
 

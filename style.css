@@ -117,6 +117,18 @@ footer {
 }
 .footer-inner .sig { font-family: var(--serif); font-size: 22px; }
 .footer-inner .meta { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); letter-spacing: 0.06em; }
+.footer-dl { background: none; color: var(--ink); cursor: pointer; }
+.email-wrap { display: inline-flex; align-items: center; gap: 8px; }
+.copy-email {
+  background: none; border: none; padding: 2px; cursor: pointer;
+  color: var(--ink-faint); display: inline-flex; align-items: center;
+  transition: color .2s;
+}
+.copy-email:hover { color: var(--accent); }
+.copy-email svg { width: 14px; height: 14px; display: block; }
+.copy-email .ic-check { display: none; }
+.copy-email.copied .ic-copy { display: none; }
+.copy-email.copied .ic-check { display: block; color: var(--accent); }
 
 /* ── HOME / HERO ───────────────────────────────────────── */
 .hero { padding: clamp(70px, 12vh, 150px) 0 90px; }
@@ -175,7 +187,7 @@ footer {
   border-bottom: 1px solid var(--line);
   margin-top: 30px;
 }
-.metric { padding: 30px 24px 30px 0; border-right: 1px solid var(--line); }
+.metric { padding: 30px 24px 30px 8px; border-right: 1px solid var(--line); }
 .metric:last-child { border-right: none; }
 .metric .n {
   font-family: var(--serif);
