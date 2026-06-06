@@ -299,6 +299,7 @@ footer {
 .d1 { animation-delay: .05s; } .d2 { animation-delay: .15s; }
 .d3 { animation-delay: .25s; } .d4 { animation-delay: .35s; }
 .d5 { animation-delay: .45s; } .d6 { animation-delay: .55s; }
+.d7 { animation-delay: .65s; }
 
 /* ── RESPONSIVE ────────────────────────────────────────── */
 @media (max-width: 880px) {
