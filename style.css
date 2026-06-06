@@ -279,6 +279,8 @@ footer {
 .proj .ptags span { font-family: var(--mono); font-size: 11px; letter-spacing: 0.05em; color: var(--ink-faint); border: 1px solid var(--line); padding: 4px 9px; }
 .proj .pmeta { font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; color: var(--ink-faint); text-align: right; line-height: 1.8; }
 .proj .pmeta .yr { font-size: 15px; color: var(--ink); }
+.proj .plink { display: inline-flex; align-items: center; gap: 6px; margin-top: 16px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); transition: gap .2s ease, color .2s ease; }
+.proj .plink:hover { color: var(--accent-ink); gap: 11px; }
 
 /* ── CONTACT ───────────────────────────────────────────── */
 .contact-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 70px; padding: 60px 0 0; align-items: start; }
