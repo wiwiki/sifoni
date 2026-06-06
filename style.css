@@ -1,5 +1,5 @@
 /* ============================================================
-   Antoine Sifoni — Personal Site
+   Antoine Sifoni · Personal Site
    Quiet Neutral · ultra-minimal, gallery-calm
    ============================================================ */
 
@@ -12,7 +12,7 @@
   --paper:      #ffffff;   /* white */
   --paper-2:    #f4f3ef;
   --line:       #e4e1d8;
-  --accent:     #8a9483;   /* faint sage — used rarely */
+  --accent:     #8a9483;   /* faint sage, used rarely */
   --accent-ink: #6f7a68;
   --max:        1180px;
   --serif:      'Inter', system-ui, sans-serif;   /* display sans */
@@ -259,11 +259,13 @@ footer {
 .xp .date { font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; color: var(--ink-faint); text-transform: uppercase; }
 .xp .org { font-family: var(--serif); font-weight: 500; font-size: 24px; letter-spacing: -0.01em; margin-top: 6px; }
 .xp .org .where { font-family: var(--body); font-size: 16px; font-style: italic; color: var(--ink-faint); font-weight: 400; }
-.xp .pos { font-size: 16px; color: var(--accent-ink); margin-top: 2px; margin-bottom: 14px; font-style: italic; }
+.xp .pos { font-size: 16px; color: var(--accent-ink); margin-top: 2px; margin-bottom: 0; font-style: italic; display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+.xp .pos:last-of-type { margin-bottom: 14px; }
+.xp .pos .pos-date { font-family: var(--mono); font-size: 11.5px; font-style: normal; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-faint); white-space: nowrap; }
 .xp .desc { font-size: 16.5px; color: var(--ink-soft); margin-bottom: 16px; max-width: 720px; }
 .xp ul { list-style: none; display: flex; flex-direction: column; gap: 12px; max-width: 760px; }
 .xp li { font-size: 16px; line-height: 1.55; color: var(--ink); padding-left: 20px; position: relative; }
-.xp li::before { content: "—"; position: absolute; left: 0; color: var(--accent); }
+.xp li::before { content: "–"; position: absolute; left: 0; color: var(--accent); }
 .xp li b { font-weight: 600; color: var(--ink); }
 
 /* ── PROJECTS ──────────────────────────────────────────── */
@@ -318,4 +320,47 @@ footer {
   .nav-inner { flex-direction: column; gap: 12px; align-items: flex-start; }
   .hero-cta { flex-direction: column; }
   .btn { justify-content: center; }
+}
+
+/* ── PRINT / PDF EXPORT ────────────────────────────────── */
+@media print {
+  @page { margin: 14mm; }
+
+  html { scroll-behavior: auto; }
+  body {
+    font-size: 11pt;
+    line-height: 1.4;
+    color: #000;
+    background: #fff;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  body::before { display: none; }           /* drop the paper-grain overlay */
+
+  /* hide on-screen chrome that shouldn't be in the PDF */
+  .nav, footer, .hero-cta, .btn, .copy-email, .footer-dl { display: none !important; }
+
+  /* neutralize the entrance animation so all content is visible */
+  .reveal { opacity: 1 !important; animation: none !important; transform: none !important; }
+
+  .wrap { max-width: none; padding: 0; }
+
+  /* tighten the CV header */
+  .page-head { padding: 0 0 16px; }
+  .page-head h1 { font-size: 30pt; line-height: 1.0; }
+  .page-head .role { margin-top: 10px; }
+  .page-head p { font-size: 10.5pt; margin-top: 12px; max-width: none; }
+
+  /* keep the two-column CV layout, drop the sticky sidebar */
+  .cv-grid { grid-template-columns: 210px 1fr; gap: 28px; padding: 22px 0 0; }
+  .cv-aside { position: static; }
+  .cv-aside .grp { margin-bottom: 18px; break-inside: avoid; }
+
+  /* don't split an experience entry across pages */
+  .xp { padding-bottom: 22px; break-inside: avoid; }
+  .xp .org { font-size: 16pt; }
+  .xp ul { gap: 6px; }
+  .xp li { font-size: 10pt; line-height: 1.35; }
+
+  a { color: inherit; text-decoration: none; }
 }
