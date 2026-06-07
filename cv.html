@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>CV · Antoine Sifoni</title>
+<title data-i18n="title.cv">CV · Antoine Sifoni</title>
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -11,21 +11,27 @@
 <nav class="nav">
   <div class="nav-inner">
     <a href="index.html" class="brand">Antoine Sifoni<span class="dot">.</span></a>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="cv.html" class="active">CV</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="cv.html" class="active" data-i18n="nav.cv">CV</a>
+        <a href="projects.html" data-i18n="nav.projects">Projects</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      </div>
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="fr">FR</button>
+      </div>
     </div>
   </div>
 </nav>
 
 <header class="page-head">
   <div class="wrap">
-    <span class="eyebrow reveal d1">Curriculum Vitae</span>
+    <span class="eyebrow reveal d1" data-i18n="cv.eyebrow">Curriculum Vitae</span>
     <h1 class="reveal d2">Antoine<br>Sifoni</h1>
-    <p class="role reveal d3">Senior Product Owner</p>
-    <p class="reveal d4">
+    <p class="role reveal d3" data-i18n="cv.role">Senior Product Owner</p>
+    <p class="reveal d4" data-i18n="cv.intro">
       Senior Product Owner with 10+ years delivering complex products in healthtech and
       IoT environments. I focus on execution, roadmap ownership, and keeping teams aligned
       and moving fast, from early-stage startups to scaled platforms.
@@ -39,35 +45,35 @@
     <!-- ASIDE -->
     <aside class="cv-aside">
       <div class="grp">
-        <h4>Contact</h4>
-        <div class="row"><div class="k">Email</div><div class="v small">antoine.sifoni@gmail.com</div></div>
-        <div class="row"><div class="k">Phone</div><div class="v small">514 528 9184</div></div>
-        <div class="row"><div class="k">Location</div><div class="v small">Montréal, QC, Canada</div></div>
+        <h4 data-i18n="cv.h.contact">Contact</h4>
+        <div class="row"><div class="k" data-i18n="cv.k.email">Email</div><div class="v small">antoine.sifoni@gmail.com</div></div>
+        <div class="row"><div class="k" data-i18n="cv.k.phone">Phone</div><div class="v small">514 528 9184</div></div>
+        <div class="row"><div class="k" data-i18n="cv.k.location">Location</div><div class="v small" data-i18n="cv.v.location">Montréal, QC, Canada</div></div>
       </div>
 
       <div class="grp">
-        <h4>Education</h4>
-        <div class="row"><div class="k">2012 – 2016</div><div class="v">B.Eng. Mechanical Eng.</div><div class="k" style="text-transform:none;letter-spacing:0">École de technologie supérieure</div></div>
-        <div class="row" style="margin-top:14px"><div class="k">2024</div><div class="v">P.Eng. (OIQ)</div></div>
+        <h4 data-i18n="cv.h.education">Education</h4>
+        <div class="row"><div class="k">2012 – 2016</div><div class="v" data-i18n="cv.edu.deg1">B.Eng. Mechanical Eng.</div><div class="k" style="text-transform:none;letter-spacing:0" data-i18n="cv.edu.deg1.school">École de technologie supérieure</div></div>
+        <div class="row" style="margin-top:14px"><div class="k">2024</div><div class="v" data-i18n="cv.edu.deg2">P.Eng. (OIQ)</div></div>
       </div>
 
       <div class="grp">
-        <h4>Skills</h4>
+        <h4 data-i18n="cv.h.skills">Skills</h4>
         <div class="chips">
-          <span class="chip">Roadmap Ownership</span>
-          <span class="chip">Strategic Thinking</span>
-          <span class="chip">Project Management</span>
-          <span class="chip">Multi-platform Delivery</span>
-          <span class="chip">User Interviews</span>
-          <span class="chip">Data Analysis</span>
-          <span class="chip">Problem Solving</span>
-          <span class="chip">Leadership</span>
-          <span class="chip">Communication</span>
+          <span class="chip" data-i18n="cv.skill1">Roadmap Ownership</span>
+          <span class="chip" data-i18n="cv.skill2">Strategic Thinking</span>
+          <span class="chip" data-i18n="cv.skill3">Project Management</span>
+          <span class="chip" data-i18n="cv.skill4">Multi-platform Delivery</span>
+          <span class="chip" data-i18n="cv.skill5">User Interviews</span>
+          <span class="chip" data-i18n="cv.skill6">Data Analysis</span>
+          <span class="chip" data-i18n="cv.skill7">Problem Solving</span>
+          <span class="chip" data-i18n="cv.skill8">Leadership</span>
+          <span class="chip" data-i18n="cv.skill9">Communication</span>
         </div>
       </div>
 
       <div class="grp">
-        <h4>Tools</h4>
+        <h4 data-i18n="cv.h.tools">Tools</h4>
         <div class="chips">
           <span class="chip">Jira</span>
           <span class="chip">Confluence</span>
@@ -79,15 +85,15 @@
       </div>
 
       <div class="grp">
-        <h4>Languages</h4>
+        <h4 data-i18n="cv.h.languages">Languages</h4>
         <div class="chips">
-          <span class="chip">English</span>
-          <span class="chip">French</span>
+          <span class="chip" data-i18n="cv.lang.en">English</span>
+          <span class="chip" data-i18n="cv.lang.fr">French</span>
         </div>
       </div>
 
       <div class="grp">
-        <h4>Formations</h4>
+        <h4 data-i18n="cv.h.formations">Formations</h4>
         <div class="row"><div class="v small">APM Program</div><div class="k" style="text-transform:none;letter-spacing:0">APM Montréal, 2025</div></div>
         <div class="row"><div class="v small">Bootcamp EEB</div><div class="k" style="text-transform:none;letter-spacing:0">École d'entrepreneurship de Beauce, 2020</div></div>
         <div class="row"><div class="v small">Centech Acceleration / Propulsion</div><div class="k" style="text-transform:none;letter-spacing:0">Centech Montréal, 2016–2020</div></div>
@@ -96,59 +102,59 @@
 
     <!-- MAIN -->
     <main class="cv-main">
-      <h4 style="font-family:var(--mono);font-size:11.5px;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink-faint);padding-bottom:14px;margin-bottom:30px;border-bottom:1px solid var(--line);">Work History</h4>
+      <h4 style="font-family:var(--mono);font-size:11.5px;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink-faint);padding-bottom:14px;margin-bottom:30px;border-bottom:1px solid var(--line);" data-i18n="cv.workhistory">Work History</h4>
 
       <div class="xp">
-        <div class="date">2023 – Present</div>
+        <div class="date" data-i18n="cv.xp1.date">2023 – Present</div>
         <div class="org">Medfar Solutions <span class="where">· Montréal</span></div>
-        <div class="pos">Senior Product Owner <span class="pos-date">2025 – Present</span></div>
-        <div class="pos">Product Owner <span class="pos-date">2023 – 2025</span></div>
+        <div class="pos"><span data-i18n="cv.xp1.pos1">Senior Product Owner</span> <span class="pos-date">2025 – Present</span></div>
+        <div class="pos"><span data-i18n="cv.xp1.pos2">Product Owner</span> <span class="pos-date">2023 – 2025</span></div>
         <ul>
-          <li><b>Team coordination &amp; roadmap alignment.</b> Led roadmap reviews with multidisciplinary stakeholders, aligning product priorities, business needs, and development capacity across multiple product areas.</li>
-          <li><b>Backlog ownership &amp; delivery.</b> Owned backlog and sprint planning for multiple products, acting as the main point of contact for developers on functional scope and clarifications.</li>
-          <li><b>Product impact.</b> Drove end-to-end delivery from user needs to pilot validation and adoption. Played a key role in launching MYLE RX, a web application for prescription coordination, supporting 4,000+ prescription deliveries since release.</li>
-          <li><b>User research.</b> Conduct interviews directly with physicians to capture clinical needs, validate solutions, and maintain continuous feedback loops.</li>
-          <li><b>AI product &amp; multi-platform delivery.</b> Product Owner on CareWay, an AI scribe built as a cross-platform web application with a companion mobile app. Coordinated the team through the Apple App Store and Google Play submission and approval process, growing adoption from 200 to 5,000 users.</li>
-          <li><b>Post-acquisition integration.</b> Led the integration of CareWay's newly acquired development team into Medfar's processes, tooling, and delivery standards, while keeping the product shipping.</li>
+          <li data-i18n="cv.xp1.li1"><b>Team coordination &amp; roadmap alignment.</b> Led roadmap reviews with multidisciplinary stakeholders, aligning product priorities, business needs, and development capacity across multiple product areas.</li>
+          <li data-i18n="cv.xp1.li2"><b>Backlog ownership &amp; delivery.</b> Owned backlog and sprint planning for multiple products, acting as the main point of contact for developers on functional scope and clarifications.</li>
+          <li data-i18n="cv.xp1.li3"><b>Product impact.</b> Drove end-to-end delivery from user needs to pilot validation and adoption. Played a key role in launching MYLE RX, a web application for prescription coordination, supporting 4,000+ prescription deliveries since release.</li>
+          <li data-i18n="cv.xp1.li4"><b>User research.</b> Conduct interviews directly with physicians to capture clinical needs, validate solutions, and maintain continuous feedback loops.</li>
+          <li data-i18n="cv.xp1.li5"><b>AI product &amp; multi-platform delivery.</b> Product Owner on CareWay, an AI scribe built as a cross-platform web application with a companion mobile app. Coordinated the team through the Apple App Store and Google Play submission and approval process, growing adoption from 200 to 5,000 users.</li>
+          <li data-i18n="cv.xp1.li6"><b>Post-acquisition integration.</b> Led the integration of CareWay's newly acquired development team into Medfar's processes, tooling, and delivery standards, while keeping the product shipping.</li>
         </ul>
       </div>
 
       <div class="xp">
         <div class="date">2018 – 2022</div>
         <div class="org">Brite4 <span class="where">· Montréal</span></div>
-        <div class="pos">Co-founder &amp; Chief Operating Officer</div>
-        <p class="desc">An IoT company developing connected hardware integrated with a SaaS platform and payment systems, enabling self-service experiences across food service, donations, and senior living.</p>
+        <div class="pos" data-i18n="cv.xp2.pos">Co-founder &amp; Chief Operating Officer</div>
+        <p class="desc" data-i18n="cv.xp2.desc">An IoT company developing connected hardware integrated with a SaaS platform and payment systems, enabling self-service experiences across food service, donations, and senior living.</p>
         <ul>
-          <li><b>Product vision &amp; strategy.</b> Defined and executed the vision for a connected ecosystem combining smart devices, software, and payment infrastructure.</li>
-          <li><b>Cross-functional development.</b> Led collaboration across hardware, firmware, and software teams to deliver integrated products.</li>
-          <li><b>Market expansion.</b> Supported a fleet of 215 active machines across Québec and Ontario, processing ~$2M in transactions across three verticals.</li>
-          <li><b>Operational scaling.</b> Designed systems for reliability and low maintenance, with hardware assembly simple enough for non-technical operators.</li>
+          <li data-i18n="cv.xp2.li1"><b>Product vision &amp; strategy.</b> Defined and executed the vision for a connected ecosystem combining smart devices, software, and payment infrastructure.</li>
+          <li data-i18n="cv.xp2.li2"><b>Cross-functional development.</b> Led collaboration across hardware, firmware, and software teams to deliver integrated products.</li>
+          <li data-i18n="cv.xp2.li3"><b>Market expansion.</b> Supported a fleet of 215 active machines across Québec and Ontario, processing ~$2M in transactions across three verticals.</li>
+          <li data-i18n="cv.xp2.li4"><b>Operational scaling.</b> Designed systems for reliability and low maintenance, with hardware assembly simple enough for non-technical operators.</li>
         </ul>
       </div>
 
       <div class="xp">
         <div class="date">Nov 2019 – Mar 2020</div>
         <div class="org">Connect&amp;Go <span class="where">· Montréal</span></div>
-        <div class="pos">Technical Lead, Product Design</div>
+        <div class="pos" data-i18n="cv.xp3.pos">Technical Lead, Product Design</div>
         <ul>
-          <li><b>Product line development.</b> Owned a new hardware product line, expanding Connect&amp;Go's client base in access control for the ski sector.</li>
-          <li><b>Budget &amp; timeline management.</b> Managed the production line's budget and timelines for cost-effective, timely delivery.</li>
-          <li><b>Product design.</b> Designed products from RFID wristbands to self-service ticket kiosks.</li>
+          <li data-i18n="cv.xp3.li1"><b>Product line development.</b> Owned a new hardware product line, expanding Connect&amp;Go's client base in access control for the ski sector.</li>
+          <li data-i18n="cv.xp3.li2"><b>Budget &amp; timeline management.</b> Managed the production line's budget and timelines for cost-effective, timely delivery.</li>
+          <li data-i18n="cv.xp3.li3"><b>Product design.</b> Designed products from RFID wristbands to self-service ticket kiosks.</li>
         </ul>
       </div>
 
       <div class="xp">
         <div class="date">2017 – 2018</div>
         <div class="org">Cégep Saint-Laurent <span class="where">· Montréal</span></div>
-        <div class="pos">Professor in Mechanical Engineering (part-time)</div>
-        <p class="desc">Designed and taught Excel, SolidWorks, and GD&amp;T courses, adapting instruction to a diverse student body and varied learning preferences.</p>
+        <div class="pos" data-i18n="cv.xp4.pos">Professor in Mechanical Engineering (part-time)</div>
+        <p class="desc" data-i18n="cv.xp4.desc">Designed and taught Excel, SolidWorks, and GD&amp;T courses, adapting instruction to a diverse student body and varied learning preferences.</p>
       </div>
 
       <div class="xp">
         <div class="date">2015 – 2018</div>
         <div class="org">SpiritEvent <span class="where">· Montréal</span></div>
-        <div class="pos">Co-founder &amp; Chief Operating Officer</div>
-        <p class="desc">Award-winning self-serve cocktail dispenser for the event industry. Co-founded out of an entrepreneurship class. Led product development and pre-seed financing, then pivoted the hardware/software base to launch Brite4.</p>
+        <div class="pos" data-i18n="cv.xp5.pos">Co-founder &amp; Chief Operating Officer</div>
+        <p class="desc" data-i18n="cv.xp5.desc">Award-winning self-serve cocktail dispenser for the event industry. Co-founded out of an entrepreneurship class. Led product development and pre-seed financing, then pivoted the hardware/software base to launch Brite4.</p>
       </div>
 
     </main>
@@ -166,7 +172,7 @@
         <svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
       </button>
     </span>
-    <button type="button" class="btn footer-dl" onclick="printCV()">Download CV (PDF)</button>
+    <button type="button" class="btn footer-dl" onclick="printCV()" data-i18n="footer.download">Download CV (PDF)</button>
   </div>
 </footer>
 
@@ -182,6 +188,7 @@
     window.addEventListener('load', function () { setTimeout(printCV, 350); });
   }
 </script>
+<script src="i18n.js"></script>
 
 </body>
 </html>

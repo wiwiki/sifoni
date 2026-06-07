@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Projects · Antoine Sifoni</title>
+<title data-i18n="title.projects">Projects · Antoine Sifoni</title>
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -11,20 +11,26 @@
 <nav class="nav">
   <div class="nav-inner">
     <a href="index.html" class="brand">Antoine Sifoni<span class="dot">.</span></a>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="cv.html">CV</a>
-      <a href="projects.html" class="active">Projects</a>
-      <a href="contact.html">Contact</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <a href="cv.html" data-i18n="nav.cv">CV</a>
+        <a href="projects.html" class="active" data-i18n="nav.projects">Projects</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      </div>
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="fr">FR</button>
+      </div>
     </div>
   </div>
 </nav>
 
 <header class="page-head">
   <div class="wrap">
-    <span class="eyebrow reveal d1">Selected Work</span>
-    <h1 class="reveal d2">Things I've<br>helped build.</h1>
-    <p class="reveal d3">
+    <span class="eyebrow reveal d1" data-i18n="proj.eyebrow">Selected Work</span>
+    <h1 class="reveal d2" data-i18n="proj.h1">Things I've<br>helped build.</h1>
+    <p class="reveal d3" data-i18n="proj.intro">
       A handful of products spanning healthtech, IoT, and connected hardware, each one
       shipped, scaled, and used in the real world.
     </p>
@@ -38,9 +44,9 @@
       <div class="pnum">01</div>
       <div class="pbody">
         <h3>MYLE RX</h3>
-        <p>Electronic prescription delivery built into Medfar's clinical platform. Took it from concept through pilot validation to launch, supporting 4,000+ prescription deliveries since release.</p>
-        <div class="ptags"><span>Product Owner</span><span>Healthtech</span><span>Pilot &amp; Launch</span></div>
-        <a class="plink" href="https://www.medfarsolutions.com/en/myle-rx/" target="_blank" rel="noopener">View live &rarr;</a>
+        <p data-i18n="proj.p1.desc">Electronic prescription delivery built into Medfar's clinical platform. Took it from concept through pilot validation to launch, supporting 4,000+ prescription deliveries since release.</p>
+        <div class="ptags"><span data-i18n="proj.p1.t1">Product Owner</span><span data-i18n="proj.p1.t2">Healthtech</span><span data-i18n="proj.p1.t3">Pilot &amp; Launch</span></div>
+        <a class="plink" href="https://www.medfarsolutions.com/en/myle-rx/" target="_blank" rel="noopener" data-i18n="proj.viewlive">View live &rarr;</a>
       </div>
       <div class="pmeta"><span class="yr">2024</span><br>MEDFAR SOLUTIONS</div>
     </div>
@@ -49,9 +55,9 @@
       <div class="pnum">02</div>
       <div class="pbody">
         <h3>CareWay AI Scribe</h3>
-        <p>An AI scribe for physicians, built as a cross-platform web application with a companion mobile app. Coordinated the team through Apple App Store and Google Play submission and approval, growing usage from 200 to 5,000 practitioners.</p>
-        <div class="ptags"><span>Product Owner</span><span>AI Scribe</span><span>Multi-platform</span></div>
-        <a class="plink" href="https://careway.ai/en" target="_blank" rel="noopener">View live &rarr;</a>
+        <p data-i18n="proj.p2.desc">An AI scribe for physicians, built as a cross-platform web application with a companion mobile app. Coordinated the team through Apple App Store and Google Play submission and approval, growing usage from 200 to 5,000 practitioners.</p>
+        <div class="ptags"><span data-i18n="proj.p2.t1">Product Owner</span><span data-i18n="proj.p2.t2">AI Scribe</span><span data-i18n="proj.p2.t3">Multi-platform</span></div>
+        <a class="plink" href="https://careway.ai/en" target="_blank" rel="noopener" data-i18n="proj.viewlive">View live &rarr;</a>
       </div>
       <div class="pmeta"><span class="yr">2025</span><br>MEDFAR SOLUTIONS</div>
     </div>
@@ -60,9 +66,9 @@
       <div class="pnum">03</div>
       <div class="pbody">
         <h3>Brite4 Connected Ecosystem</h3>
-        <p>Connected hardware + SaaS + payments enabling self-service across food service, donations, and senior living. A single tech backbone serving three verticals: 215 machines, ~$2M processed.</p>
-        <div class="ptags"><span>IoT</span><span>Hardware + Software</span><span>Payments</span><span>Co-founder</span></div>
-        <a class="plink" href="https://www.brite4.com/en/home/" target="_blank" rel="noopener">View live &rarr;</a>
+        <p data-i18n="proj.p3.desc">Connected hardware + SaaS + payments enabling self-service across food service, donations, and senior living. A single tech backbone serving three verticals: 215 machines, ~$2M processed.</p>
+        <div class="ptags"><span data-i18n="proj.p3.t1">IoT</span><span data-i18n="proj.p3.t2">Hardware + Software</span><span data-i18n="proj.p3.t3">Payments</span><span data-i18n="proj.p3.t4">Co-founder</span></div>
+        <a class="plink" href="https://www.brite4.com/en/home/" target="_blank" rel="noopener" data-i18n="proj.viewlive">View live &rarr;</a>
       </div>
       <div class="pmeta"><span class="yr">2018–22</span><br>BRITE4</div>
     </div>
@@ -71,8 +77,8 @@
       <div class="pnum">04</div>
       <div class="pbody">
         <h3>Ski-Sector Access Control</h3>
-        <p>A new hardware product line for Connect&amp;Go, from RFID wristbands to self-service ticket kiosks, expanding their client base in the ski access-control market.</p>
-        <div class="ptags"><span>Hardware</span><span>Product Design</span><span>RFID</span></div>
+        <p data-i18n="proj.p4.desc">A new hardware product line for Connect&amp;Go, from RFID wristbands to self-service ticket kiosks, expanding their client base in the ski access-control market.</p>
+        <div class="ptags"><span data-i18n="proj.p4.t1">Hardware</span><span data-i18n="proj.p4.t2">Product Design</span><span data-i18n="proj.p4.t3">RFID</span></div>
       </div>
       <div class="pmeta"><span class="yr">2019–20</span><br>CONNECT&amp;GO</div>
     </div>
@@ -81,8 +87,8 @@
       <div class="pnum">05</div>
       <div class="pbody">
         <h3>SpiritEvent Cocktail Dispenser</h3>
-        <p>An award-winning self-serve cocktail dispenser for events. Co-founded from an entrepreneurship class. Led product development and pre-seed financing before pivoting the tech into Brite4.</p>
-        <div class="ptags"><span>Hardware</span><span>Co-founder</span><span>Pre-seed</span></div>
+        <p data-i18n="proj.p5.desc">An award-winning self-serve cocktail dispenser for events. Co-founded from an entrepreneurship class. Led product development and pre-seed financing before pivoting the tech into Brite4.</p>
+        <div class="ptags"><span data-i18n="proj.p5.t1">Hardware</span><span data-i18n="proj.p5.t2">Co-founder</span><span data-i18n="proj.p5.t3">Pre-seed</span></div>
       </div>
       <div class="pmeta"><span class="yr">2015–18</span><br>SPIRITEVENT</div>
     </div>
@@ -91,10 +97,10 @@
       <div class="pnum">06</div>
       <div class="pbody">
         <h3>Real Estate Portfolio &amp; Renovation</h3>
-        <p>Own and operate two multi-unit properties (7 units total) in Montréal. Currently leading a full structural renovation of a century-old home, managing budget, contractors, permits, and timeline end-to-end.</p>
-        <div class="ptags"><span>Real Estate</span><span>Capital Planning</span><span>Multi-vendor Coordination</span><span>Long-horizon Delivery</span></div>
+        <p data-i18n="proj.p6.desc">Own and operate two multi-unit properties (7 units total) in Montréal. Currently leading a full structural renovation of a century-old home, managing budget, contractors, permits, and timeline end-to-end.</p>
+        <div class="ptags"><span data-i18n="proj.p6.t1">Real Estate</span><span data-i18n="proj.p6.t2">Capital Planning</span><span data-i18n="proj.p6.t3">Multi-vendor Coordination</span><span data-i18n="proj.p6.t4">Long-horizon Delivery</span></div>
       </div>
-      <div class="pmeta"><span class="yr">2018–NOW</span><br>PERSONAL</div>
+      <div class="pmeta"><span class="yr">2018–NOW</span><br><span data-i18n="proj.p6.meta">PERSONAL</span></div>
     </div>
 
   </div>
@@ -111,9 +117,10 @@
         <svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
       </button>
     </span>
-    <a href="cv.html?print=1" class="btn footer-dl">Download CV (PDF)</a>
+    <a href="cv.html?print=1" class="btn footer-dl" data-i18n="footer.download">Download CV (PDF)</a>
   </div>
 </footer>
 
+<script src="i18n.js"></script>
 </body>
 </html>

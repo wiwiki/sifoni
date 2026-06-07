@@ -87,6 +87,27 @@ a { color: inherit; text-decoration: none; }
 .nav-links a.active::after { width: 100%; }
 .nav-links a.active { color: var(--ink); }
 
+/* right-side group: links + language toggle */
+.nav-right { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
+
+/* language toggle — segmented control matching nav language */
+.lang-toggle { display: inline-flex; align-items: center; border: 1px solid var(--line); }
+.lang-toggle button {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: var(--ink-faint);
+  transition: background .2s, color .2s;
+}
+.lang-toggle button + button { border-left: 1px solid var(--line); }
+.lang-toggle button:not(.active):hover { color: var(--ink); }
+.lang-toggle button.active { background: var(--ink); color: var(--paper); }
+
 /* ── SHARED PIECES ─────────────────────────────────────── */
 .eyebrow {
   font-family: var(--mono);
@@ -341,7 +362,7 @@ footer {
   body::before { display: none; }           /* drop the paper-grain overlay */
 
   /* hide on-screen chrome that shouldn't be in the PDF */
-  .nav, footer, .hero-cta, .btn, .copy-email, .footer-dl { display: none !important; }
+  .nav, footer, .hero-cta, .btn, .copy-email, .footer-dl, .lang-toggle { display: none !important; }
 
   /* neutralize the entrance animation so all content is visible */
   .reveal { opacity: 1 !important; animation: none !important; transform: none !important; }
