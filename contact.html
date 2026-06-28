@@ -4,9 +4,39 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title data-i18n="title.contact">Contact · Antoine Sifoni</title>
+<meta name="description" content="Get in touch with Antoine Sifoni, Senior Product Owner in Montréal. Open to conversations about product, healthtech, IoT, and interesting problems worth solving." />
+<link rel="canonical" href="https://sifoni.ca/contact.html" />
+
+<!-- Open Graph / social share -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Antoine Sifoni" />
+<meta property="og:title" content="Contact · Antoine Sifoni" />
+<meta property="og:description" content="Always open to conversations about product, healthtech, IoT, or interesting problems worth solving." />
+<meta property="og:url" content="https://sifoni.ca/contact.html" />
+<meta property="og:image" content="https://sifoni.ca/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="en_CA" />
+<meta property="og:locale:alternate" content="fr_CA" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Contact · Antoine Sifoni" />
+<meta name="twitter:description" content="Always open to conversations about product, healthtech, IoT, or interesting problems worth solving." />
+<meta name="twitter:image" content="https://sifoni.ca/og-image.png" />
+
+<!-- icons -->
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="favicon.svg" />
+
+<!-- fonts (non-blocking: preconnect + direct stylesheet, no CSS @import) -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" />
+
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+<a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
 
 <nav class="nav">
   <div class="nav-inner">
@@ -19,14 +49,14 @@
         <a href="contact.html" class="active" data-i18n="nav.contact">Contact</a>
       </div>
       <div class="lang-toggle" role="group" aria-label="Language">
-        <button type="button" data-lang="en">EN</button>
-        <button type="button" data-lang="fr">FR</button>
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="fr" aria-pressed="false">FR</button>
       </div>
     </div>
   </div>
 </nav>
 
-<header class="page-head" style="border-bottom:none;padding-bottom:0;">
+<header class="page-head" id="main" tabindex="-1" style="border-bottom:none;padding-bottom:0;">
   <div class="wrap">
     <span class="eyebrow reveal d1" data-i18n="contact.eyebrow">Get in touch</span>
   </div>
